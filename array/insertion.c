@@ -19,7 +19,12 @@ int indexInsertion(int arr[], int size, int element, int capacity, int index)
     }
     for (int i = size - 1; i >= index; i--)
     {
+        // {12, 23, 45, 56, 67, } i = 4 index = 3
         arr[i + 1] = arr[i];
+        // arr[4 + 1] = arr[4];
+        // {12, 23, 45, 56, , 67} i = 3 index = 3
+        // arr[3 + 1] = arr[3];
+        // {12, 23, 45, , 56, 67} i = 3 index = 3
     }
     arr[index] = element;
     return 1;
