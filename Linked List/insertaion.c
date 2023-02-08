@@ -110,7 +110,7 @@ int main()
     // head = insertAtEnd(head, 99);
 
     // insert after a Node 
-    head = insertAfterNode(head, second, 63);
+    // head = insertAfterNode(head, second, 63);
 
     linkedListTraversal(head);
 
